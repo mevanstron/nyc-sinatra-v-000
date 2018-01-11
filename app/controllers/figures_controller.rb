@@ -6,9 +6,9 @@ class FiguresController < ApplicationController
   end
 
   post '/figures' do
-    
+
     figure = Figure.create(params[:figure])
-    #binding.pry
+    binding.pry
     if params[:landmark]
   end
 end
