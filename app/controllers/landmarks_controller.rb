@@ -28,9 +28,10 @@ class LandmarksController < ApplicationController
   end
 
   patch '/landmarks/:id' do
+    binding.pry
     landmark = Landmark.update(params[:figure])
 
-    binding.pry
+
 
     figure.save
     redirect :"/figures/#{figure.id}"
