@@ -1,4 +1,8 @@
 class FiguresController < ApplicationController
+  get '/figures' do
+    erb: index
+  end
+
   get '/figures/new' do
     @landmarks = Landmark.all
     @titles = Title.all
@@ -18,7 +22,7 @@ class FiguresController < ApplicationController
       landmark = Landmark.create(params[:landmark])
       figure.landmarks << landmark
     end
-
+    
     figure.save
   end
 end
