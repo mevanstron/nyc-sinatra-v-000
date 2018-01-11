@@ -9,6 +9,6 @@ class FiguresController < ApplicationController
 
     figure = Figure.create(params[:figure])
     binding.pry
-    if params[:landmark]
+    #if params[:landmark]
   end
 end
