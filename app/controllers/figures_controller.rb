@@ -13,6 +13,12 @@ class FiguresController < ApplicationController
       title = Title.create(params[:title])
       figure.titles << title
     end
+
+    if !params[:landmark][:name].empty?
+      landmark = Landmark.create(params[:landmark])
+      figure.landmarks << landmark
+    end
+
     figure.save
   end
 end
