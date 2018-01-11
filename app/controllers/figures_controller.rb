@@ -6,6 +6,6 @@ class FiguresController < ApplicationController
   end
 
   post '/figures' do
-    binding.pry
+    #binding.pry
   end
 end
