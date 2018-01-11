@@ -39,6 +39,7 @@ class FiguresController < ApplicationController
     end
 
     figure.save
+    redirect :"/figures/#{figure.id}"
   end
 
   patch '/figures/:id' do
@@ -55,7 +56,6 @@ class FiguresController < ApplicationController
     end
 
     figure.save
-
     redirect :"/figures/#{figure.id}"
   end
 end
