@@ -10,8 +10,11 @@ class FiguresController < ApplicationController
     figure = Figure.create(params[:figure])
     binding.pry
     if !params[:title][:name].empty?
-      a = 1
+      title = Title.create(params[:title])
+      figure.titles << title
       binding.pry
+    end
+      
     end
   end
 end
