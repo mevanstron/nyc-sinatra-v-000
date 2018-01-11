@@ -29,7 +29,7 @@ class LandmarksController < ApplicationController
 
   patch '/landmarks/:id' do
     binding.pry
-    landmark = Landmark.update(params[:figure])
+    landmark = Landmark.update(params[:landmark])
 
 
 
