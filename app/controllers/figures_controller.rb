@@ -4,4 +4,8 @@ class FiguresController < ApplicationController
     @titles = Title.all
     erb :'/figures/new'
   end
+
+  post '/figures' do
+    binding.pry
+  end
 end
