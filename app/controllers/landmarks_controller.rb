@@ -17,7 +17,7 @@ class LandmarksController < ApplicationController
 
   get '/landmarks/:id/edit' do
     @landmark = Landmark.find(params[:id])
-    @year_completed =
+    @year_completed = @landmark.year_completed
     erb :'landmarks/edit'
   end
 
