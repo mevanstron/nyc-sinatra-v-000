@@ -8,31 +8,5 @@
 
   <br></br>
 
-  <label for="">Figures: </label>
-
-  <br></br>
-
-  <% @figures.each do |figure| %>
-  <input id="figure_<%= figure.id %>" type="checkbox" name="landmark[figure_ids][]" value="<%= figure.id %>"><%= figure.name %>
-  <br />
-  <% end %>
-  <br />
-  <label for="new_figure">New Figure: </label><input id="new_figure" type="text" name="figure[name]" value="">
-
-  <br></br>
-
-  <label for="">Titles: </label>
-
-  <br></br>
-
-  <% @titles.each do |title| %>
-  <input id="title_<%= title.id %>" type="checkbox" name="figure[title_ids][]" value="<%= title.id %>"><%= title.name %>
-  <br />
-  <% end %>
-  <br />
-  <label for="new_title">New Title: </label><input id="new_title" type="text" name="title[name]" value="">
-
-  <br></br>
-
   <button type="submit" name="create" value="Create New Figure">Create New Figure</button>
 </form>
