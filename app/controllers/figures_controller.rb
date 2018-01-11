@@ -41,7 +41,7 @@ class FiguresController < ApplicationController
     figure.save
   end
 
-  patch '/figures' do
+  patch '/figures/:id' do
     binding.pry
 
   end
