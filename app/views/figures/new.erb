@@ -9,7 +9,7 @@
   <br></br>
 
   <% @titles.each do |title| %>
-  <input id="figure[title_ids][]" type="checkbox" name="titles[]" value="<%= title.name %>"><%= title.name %>
+  <input id="figure[title_ids][]" type="checkbox" name="titles[]" value="<%= title.id %>"><%= title.name %>
   <br />
   <% end %>
   <br />
