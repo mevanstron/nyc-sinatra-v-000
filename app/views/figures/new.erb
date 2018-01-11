@@ -1,13 +1,27 @@
 <h1>New Figure</h1>
 <form action="/figures" method="post">
   <label for="name">Name: </label><input id="name" type="text" name="figure[name]" value="">
+
   <br></br>
+
   <label for="">Titles: </label>
+
   <br></br>
+
   <% @genres.each do |genre| %>
   <input id="" type="checkbox" name="titles[]" value="<%= genre.name %>"><%= genre.name %>
   <% end %>
+
+  <br></br>
+  
+  <label for="">Landmarks: </label>
+
   <br></br>
 
+  <% @landmarks.each do |landmark| %>
+  <input id="" type="checkbox" name="landmarks[]" value="<%= landmark.name %>"><%= landmark.name %>
+  <% end %>
+
+  <br></br>
 
 </form>
