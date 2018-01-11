@@ -10,7 +10,9 @@ class FiguresController < ApplicationController
     erb :'/figures/new'
   end
 
-  get '/figures/:id'
+  get '/figures/:id' do
+
+  end
 
   post '/figures' do
 
