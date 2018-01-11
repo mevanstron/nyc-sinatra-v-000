@@ -40,4 +40,9 @@ class FiguresController < ApplicationController
 
     figure.save
   end
+
+  patch '/figures' do
+
+
+  end
 end
