@@ -42,7 +42,6 @@ class FiguresController < ApplicationController
   end
 
   patch '/figures/:id' do
-    binding.pry
     figure = Figure.update(params[:figure])
 
     if !params[:title][:name].empty?
