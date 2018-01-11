@@ -1,6 +1,6 @@
 class FiguresController < ApplicationController
   get '/figures' do
-    erb: index
+    erb :'figures/index'
   end
 
   get '/figures/new' do
