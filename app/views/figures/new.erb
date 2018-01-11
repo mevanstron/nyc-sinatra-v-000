@@ -4,8 +4,9 @@
   <br></br>
   <label for="">Titles: </label>
   <br></br>
-  <input id="" type="text" name="titles[]" value="">
+  <% @genres.each do |genre| %>
+  <input id="" type="checkbox" name="titles[]" value="<%= genre.name %>"><%= genre.name %>
   <br></br>
-  
+
 
 </form>
