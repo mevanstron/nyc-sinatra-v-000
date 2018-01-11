@@ -12,9 +12,8 @@ class FiguresController < ApplicationController
 
   get '/figures/:id' do
     @figure = Figure.find(params[:id])
-    @titles = Title.all
-    @landmarks = Landmark.all
-    binding.pry
+    @titles = @figure.titles
+    @landmarks = @figure.landmarks
     erb :'/figures/show'
   end
 
