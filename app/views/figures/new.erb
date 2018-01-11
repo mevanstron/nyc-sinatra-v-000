@@ -9,7 +9,6 @@
   <br></br>
 
   <% @titles.each do |title| %>
-  <% binding.pry %>
   <input id="figure[title_ids][]" type="checkbox" name="titles[]" value="<%= title.name %>"><%= title.name %>
   <br />
   <% end %>
