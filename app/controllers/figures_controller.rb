@@ -8,13 +8,13 @@ class FiguresController < ApplicationController
   post '/figures' do
 
     figure = Figure.create(params[:figure])
-    
+
     if !params[:title][:name].empty?
       title = Title.create(params[:title])
       figure.titles << title
       binding.pry
     end
-      
+
     end
   end
 end
