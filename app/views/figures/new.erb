@@ -13,7 +13,7 @@
   <br />
   <% end %>
   <br />
-  <label for="title">New Title: </label><input type="text" name="title" value="">
+  <label for="title">New Title: </label><input id="title" type="text" name="title[name]" value="">
   <br></br>
 
   <label for="">Landmarks: </label>
@@ -24,7 +24,9 @@
   <input id="" type="checkbox" name="landmarks[]" value="<%= landmark.name %>"><%= landmark.name %>
   <br />
   <% end %>
-
+  <br />
+  <label for="landmark">New Landmark: </label><input id="landmark" type="text" name="landmark[name]" value="">
+  
   <br></br>
 
 </form>
