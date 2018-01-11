@@ -21,7 +21,7 @@ class FiguresController < ApplicationController
     @figure = Figure.find(params[:id])
     @titles = @figure.titles
     @landmarks = @figure.landmarks
-    erb :'/figures/show'
+    erb :'/figures/edit'
   end
 
   post '/figures' do
