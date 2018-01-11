@@ -1,6 +1,7 @@
 class FiguresController < ApplicationController
   get '/figures/new' do
-
-    erb: '/figures/new'
+    @landmarks = Lankmark.all
+    @titles = Title.all
+    erb :'/figures/new'
   end
 end
