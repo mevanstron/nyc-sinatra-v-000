@@ -9,7 +9,7 @@ class FiguresController < ApplicationController
 
     figure = Figure.create(params[:figure])
     binding.pry
-    if !params[:landmark][:name].empty?
+    if !params[:title][:name].empty?
       a = 1
       binding.pry
     end
