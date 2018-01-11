@@ -28,7 +28,7 @@ class LandmarksController < ApplicationController
   end
 
   patch '/landmarks/:id' do
-    binding.pry
+  #binding.pry
     landmark = Landmark.update(params[:landmark])
 
 
