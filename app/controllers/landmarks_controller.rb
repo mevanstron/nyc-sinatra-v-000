@@ -28,11 +28,7 @@ class LandmarksController < ApplicationController
   end
 
   patch '/landmarks/:id' do
-  #binding.pry
     landmark = Landmark.update(params[:landmark])
-
-
-
 
     redirect :"/figures/#{figure.id}"
   end
