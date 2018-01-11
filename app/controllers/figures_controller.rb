@@ -15,6 +15,6 @@ class FiguresController < ApplicationController
       binding.pry
     end
 
-    end
+    
   end
 end
