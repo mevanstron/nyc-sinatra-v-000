@@ -42,7 +42,7 @@ class FiguresController < ApplicationController
   end
 
   patch '/figures' do
-
+    binding.pry
 
   end
 end
