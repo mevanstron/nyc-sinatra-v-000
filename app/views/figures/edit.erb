@@ -1,7 +1,7 @@
 <h1>New Figure</h1>
 <form action="/figures/" method="post">
   <input id="hidden" type="hidden" name="_method" value="patch">
-  <label for="figure_name">Name: </label><input id="figure_name" type="text" name="figure[name]" value="<%= @figure.name %>">
+  <label for="figure_name">Name: </label><input id="figure_name" type="text" name="figure[namde]" value="<%= @figure.name %>">
 
   <br></br>
 
@@ -10,7 +10,7 @@
   <br></br>
 
   <% @titles.each do |title| %>
-  <input id="title_<%= title.id %>" type="checkbox" name="figure[title_ids]" value="<%= title.id %>" <%= 'checked' if @figure.titles.include?(title) %>><%= title.name %>
+  <input id="title_<%= title.id %>" type="checkbox" name="figure[title_ids][]" value="<%= title.id %>" <%= 'checked' if @figure.titles.include?(title) %>><%= title.name %>
   <br />
   <% end %>
   <br />
